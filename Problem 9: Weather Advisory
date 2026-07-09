@@ -1,0 +1,91 @@
+Statement: Codes: 1 = Sunny, 2 = Rainy, 3 = Snowy. Print an advisory message.
+
+1. if
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    int code;
+    cout << "Enter weather code: "; cin >> code;
+    if (code == 3)
+        cout << "Snowy - drive carefully!" << endl;
+    cout << "Advisory processed." << endl;
+    return 0;
+}
+
+
+
+2. if-else
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    int code;
+    cout << "Enter weather code: "; cin >> code;
+    if (code >= 1 && code <= 3)
+        cout << "Valid weather code." << endl;
+    else
+        cout << "Invalid weather code." << endl;
+    return 0;
+}
+
+
+
+3. if-else-if
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    int code;
+    cout << "Enter weather code: "; cin >> code;
+    if (code == 1) cout << "Sunny - wear sunscreen" << endl;
+    else if (code == 2) cout << "Rainy - carry an umbrella" << endl;
+    else if (code == 3) cout << "Snowy - wear boots" << endl;
+    else cout << "Invalid weather code." << endl;
+    return 0;
+}
+
+
+
+4. switch
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    int code;
+    cout << "Enter weather code: "; cin >> code;
+    switch (code) {
+        case 1: cout << "Sunny - wear sunscreen" << endl; break;
+        case 2: cout << "Rainy - carry an umbrella" << endl; break;
+        case 3: cout << "Snowy - wear boots" << endl; break;
+        default: cout << "Invalid weather code." << endl;
+    }
+    return 0;
+}
+
+
+
+5. Nested if
+
+#include <iostream>
+using namespace std;
+int main() {
+    int code;
+    cout << "Enter weather code: "; cin >> code;
+    if (code >= 1 && code <= 3) {
+        if (code == 1)
+            cout << "Sunny - wear sunscreen" << endl;
+        else {
+            if (code == 2)
+                cout << "Rainy - carry an umbrella" << endl;
+            else
+                cout << "Snowy - wear boots" << endl;
+        }
+    } else
+        cout << "Invalid weather code." << endl;
+    return 0;
+}
