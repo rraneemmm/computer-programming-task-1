@@ -1,0 +1,92 @@
+Statement: Codes: 1=A, 2=B, 3=C, 4=D, 5=F. Print the grade letter.
+
+
+1. if
+
+#include <iostream>
+using namespace std;
+int main() {
+    int code;
+    cout << "Enter grade code: "; cin >> code;
+    if (code == 5)
+        cout << "F - please see your advisor." << endl;
+    cout << "Grade processed." << endl;
+    return 0;
+}
+
+
+
+2. if-else
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    int code;
+    cout << "Enter grade code: "; cin >> code;
+    if (code >= 1 && code <= 5)
+        cout << "Valid grade code." << endl;
+    else
+        cout << "Invalid grade code." << endl;
+    return 0;
+}
+
+
+
+3. if-else-if
+
+#include <iostream>
+using namespace std;
+int main() {
+    int code;
+    cout << "Enter grade code: "; cin >> code;
+    if (code == 1) cout << "Grade: A" << endl;
+    else if (code == 2) cout << "Grade: B" << endl;
+    else if (code == 3) cout << "Grade: C" << endl;
+    else if (code == 4) cout << "Grade: D" << endl;
+    else if (code == 5) cout << "Grade: F" << endl;
+    else cout << "Invalid grade code." << endl;
+    return 0;
+}
+
+
+4. switch
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    int code;
+    cout << "Enter grade code: "; cin >> code;
+    switch (code) {
+        case 1: cout << "Grade: A" << endl; break;
+        case 2: cout << "Grade: B" << endl; break;
+        case 3: cout << "Grade: C" << endl; break;
+        case 4: cout << "Grade: D" << endl; break;
+        case 5: cout << "Grade: F" << endl; break;
+        default: cout << "Invalid grade code." << endl;
+    }
+    return 0;
+}
+
+
+5. Nested if
+
+#include <iostream>
+using namespace std;
+int main() {
+    int code;
+    cout << "Enter grade code: "; cin >> code;
+    if (code >= 1 && code <= 5) {
+        if (code <= 3) {
+            if (code == 1) cout << "Grade: A" << endl;
+            else if (code == 2) cout << "Grade: B" << endl;
+            else cout << "Grade: C" << endl;
+        } else {
+            if (code == 4) cout << "Grade: D" << endl;
+            else cout << "Grade: F" << endl;
+        }
+    } else
+        cout << "Invalid grade code." << endl;
+    return 0;
+}
