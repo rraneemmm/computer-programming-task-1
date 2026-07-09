@@ -1,0 +1,93 @@
+Statement:  Codes: 1 = VIP, 2 = Regular, 3 = Guest. Print seating priority.
+
+
+1. if
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    int code;
+    cout << "Enter table code: "; cin >> code;
+    if (code == 1)
+        cout << "VIP - complimentary drink included!" << endl;
+    cout << "Booking processed." << endl;
+    return 0;
+}
+
+
+
+2. if-else
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    int code;
+    cout << "Enter table code: "; cin >> code;
+    if (code >= 1 && code <= 3)
+        cout << "Valid booking code." << endl;
+    else
+        cout << "Invalid booking code." << endl;
+    return 0;
+}
+
+
+
+3. if-else-if
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    int code;
+    cout << "Enter table code: "; cin >> code;
+    if (code == 1) cout << "VIP - priority seating" << endl;
+    else if (code == 2) cout << "Regular - standard wait" << endl;
+    else if (code == 3) cout << "Guest - waitlist applies" << endl;
+    else cout << "Invalid booking code." << endl;
+    return 0;
+}
+
+
+
+4. switch
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    int code;
+    cout << "Enter table code: "; cin >> code;
+    switch (code) {
+        case 1: cout << "VIP - priority seating" << endl; break;
+        case 2: cout << "Regular - standard wait" << endl; break;
+        case 3: cout << "Guest - waitlist applies" << endl; break;
+        default: cout << "Invalid booking code." << endl;
+    }
+    return 0;
+}
+
+
+
+5. Nested if
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    int code;
+    cout << "Enter table code: "; cin >> code;
+    if (code >= 1 && code <= 3) {
+        if (code == 1)
+            cout << "VIP - priority seating" << endl;
+        else {
+            if (code == 2)
+                cout << "Regular - standard wait" << endl;
+            else
+                cout << "Guest - waitlist applies" << endl;
+        }
+    } else
+        cout << "Invalid booking code." << endl;
+    return 0;
+}
