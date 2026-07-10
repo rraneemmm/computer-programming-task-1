@@ -1,0 +1,77 @@
+ a) if
+
+#include <iostream>
+using namespace std;
+int main() {
+    char color;
+    cout << "Enter light color (R/Y/G): ";
+    cin >> color;
+    if (color == 'R')
+        cout << "Stop!" << endl;
+    return 0;
+}
+
+
+ b) if-else
+#include <iostream>
+using namespace std;
+int main() {
+    char color;
+    cout << "Enter light color (R/Y/G): ";
+    cin >> color;
+    if (color == 'G')
+        cout << "Go!" << endl;
+    else
+        cout << "Don't Go!" << endl;
+    return 0;
+}
+
+
+ c) if-else-if
+#include <iostream>
+using namespace std;
+int main() {
+    char color;
+    cout << "Enter light color (R/Y/G): ";
+    cin >> color;
+    if (color == 'R') cout << "Stop!" << endl;
+    else if (color == 'Y') cout << "Slow down!" << endl;
+    else if (color == 'G') cout << "Go!" << endl;
+    else cout << "Invalid light color" << endl;
+    return 0;
+}
+
+
+d) switch
+#include <iostream>
+using namespace std;
+int main() {
+    char color;
+    cout << "Enter light color (R/Y/G): ";
+    cin >> color;
+    switch (color) {
+        case 'R': cout << "Stop!" << endl; break;
+        case 'Y': cout << "Slow down!" << endl; break;
+        case 'G': cout << "Go!" << endl; break;
+        default: cout << "Invalid light color" << endl;
+    }
+    return 0;
+}
+
+
+ e) nested if
+#include <iostream>
+using namespace std;
+int main() {
+    char color;
+    cout << "Enter light color (R/Y/G): ";
+    cin >> color;
+    if (color == 'R' || color == 'Y' || color == 'G') {
+        if (color == 'R') cout << "Stop! Pedestrians may cross." << endl;
+        else if (color == 'Y') cout << "Slow down!" << endl;
+        else cout << "Go! Pedestrians must wait." << endl;
+    } else {
+        cout << "Invalid light color" << endl;
+    }
+    return 0;
+}
