@@ -1,0 +1,85 @@
+a) if
+#include <iostream>
+using namespace std;
+int main() {
+    double a, b; char op;
+    cout << "Enter: number operator number (e.g. 5 + 3): ";
+    cin >> a >> op >> b;
+    if (op == '+')
+        cout << "Result: " << a + b << endl;
+    return 0;
+}
+
+
+b) if-else
+#include <iostream>
+using namespace std;
+int main() {
+    double a, b; char op;
+    cout << "Enter: number operator number (e.g. 5 - 3): ";
+    cin >> a >> op >> b;
+    if (op == '+')
+        cout << "Result: " << a + b << endl;
+    else
+        cout << "Result: " << a - b << endl;   // assumes '-' if not '+'
+    return 0;
+}
+
+
+ c) if-else-if
+#include <iostream>
+using namespace std;
+int main() {
+    double a, b; char op;
+    cout << "Enter: number operator number (e.g. 5 * 3): ";
+    cin >> a >> op >> b;
+    if (op == '+') cout << "Result: " << a + b << endl;
+    else if (op == '-') cout << "Result: " << a - b << endl;
+    else if (op == '*') cout << "Result: " << a * b << endl;
+    else if (op == '/') cout << "Result: " << a / b << endl;
+    else cout << "Invalid operator" << endl;
+    return 0;
+}
+
+
+d) switch
+#include <iostream>
+using namespace std;
+int main() {
+    double a, b; char op;
+    cout << "Enter: number operator number (e.g. 5 / 3): ";
+    cin >> a >> op >> b;
+    switch (op) {
+        case '+': cout << "Result: " << a + b << endl; break;
+        case '-': cout << "Result: " << a - b << endl; break;
+        case '*': cout << "Result: " << a * b << endl; break;
+        case '/':
+            if (b == 0) cout << "Cannot divide by zero!" << endl;
+            else cout << "Result: " << a / b << endl;
+            break;
+        default: cout << "Invalid operator" << endl;
+    }
+    return 0;
+}
+
+ e) nested if
+#include <iostream>
+using namespace std;
+int main() {
+    double a, b; char op;
+    cout << "Enter: number operator number (e.g. 5 / 0): ";
+    cin >> a >> op >> b;
+    if (op == '+' || op == '-' || op == '*' || op == '/') {
+        if (op == '/') {
+            if (b == 0) cout << "Cannot divide by zero!" << endl;
+            else cout << "Result: " << a / b << endl;
+        } else {
+            if (op == '+') cout << "Result: " << a + b << endl;
+            else if (op == '-') cout << "Result: " << a - b << endl;
+            else cout << "Result: " << a * b << endl;
+        }
+    } else {
+        cout << "Invalid operator" << endl;
+    }
+    return 0;
+}
