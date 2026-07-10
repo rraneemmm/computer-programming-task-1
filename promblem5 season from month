@@ -1,0 +1,85 @@
+  a)if
+#include <iostream>
+using namespace std;
+int main() {
+    int month;
+    cout << "Enter month number (1-12): ";
+    cin >> month;
+    if (month == 12 || month == 1 || month == 2)
+        cout << "Winter" << endl;
+    return 0;
+}
+
+
+ b) if-else
+#include <iostream>
+using namespace std;
+int main() {
+    int month;
+    cout << "Enter month number (1-12): ";
+    cin >> month;
+    if (month >= 6 && month <= 8)
+        cout << "Summer season" << endl;
+    else
+        cout << "Not Summer" << endl;
+    return 0;
+}
+
+c) if-else-if
+
+#include <iostream>
+using namespace std;
+int main() {
+    int month;
+    cout << "Enter month number (1-12): ";
+    cin >> month;
+    if (month == 12 || month == 1 || month == 2) cout << "Winter" << endl;
+    else if (month >= 3 && month <= 5) cout << "Spring" << endl;
+    else if (month >= 6 && month <= 8) cout << "Summer" << endl;
+    else if (month >= 9 && month <= 11) cout << "Autumn" << endl;
+    else cout << "Invalid month" << endl;
+    return 0;
+}
+
+
+d) switch
+#include <iostream>
+using namespace std;
+int main() {
+    int month;
+    cout << "Enter month number (1-12): ";
+    cin >> month;
+    switch (month) {
+        case 12: case 1: case 2:
+            cout << "Winter" << endl; break;
+        case 3: case 4: case 5:
+            cout << "Spring" << endl; break;
+        case 6: case 7: case 8:
+            cout << "Summer" << endl; break;
+        case 9: case 10: case 11:
+            cout << "Autumn" << endl; break;
+        default:
+            cout << "Invalid month" << endl;
+    }
+    return 0;
+}
+
+
+ e) nested if
+#include <iostream>
+using namespace std;
+int main() {
+    int month;
+    cout << "Enter month number (1-12): ";
+    cin >> month;
+    if (month >= 1 && month <= 12) {
+        if (month <= 2 || month == 12) cout << "Winter" << endl;
+        else if (month <= 5) cout << "Spring" << endl;
+        else if (month <= 8) cout << "Summer" << endl;
+        else cout << "Autumn" << endl;
+    } else {
+        cout << "Invalid month" << endl;
+    }
+    return 0;
+}
+
