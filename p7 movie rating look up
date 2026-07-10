@@ -1,0 +1,135 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int rating;
+    cout << "Enter rating code: "; cin >> rating;
+
+    // Outer IF: Validates that the input code belongs to a valid rating option (1 to 4)
+    if (rating >= 1 && rating <= 4) {
+        
+        // Inner IF-ELSE-IF: Delivers specific rating details once range is verified
+        if (rating == 1) {
+            cout << "G - General Audience" << endl;
+        } else if (rating == 2) {
+            cout << "PG - Parental Guidance" << endl;
+        } else if (rating == 3) {
+            cout << "PG-13 - Parents Cautioned" << endl;
+        } else { // Must be 4 since it passed the outer filter and isn't 1, 2, or 3
+            cout << "R - Restricted" << endl;
+        }
+
+    } else {
+        // Runs immediately if the user inputs something completely out-of-bounds
+        cout << "Invalid rating code!" << endl;
+    }
+
+    return 0;
+ 8.1 IF 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int rating;
+    cout << "Enter rating code: "; 
+    cin >> rating;
+
+    // A simple, standalone IF statement checking for a single condition
+    if (rating == 4) {
+        cout << "R - Adults only, popcorn's on us!" << endl;
+    }
+
+    // This code line executes no matter what the input was
+    cout << "Rating checked." << endl;
+    
+    return 0;
+}
+ 8.2 IF-ELSE 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int rating;
+    cout << "Enter rating code: "; 
+    cin >> rating;
+
+    // Checks the first condition
+    if (rating == 1) {
+        cout << "G - Fun for everyone!" << endl;
+    } 
+    else {
+        // This runs automatically for ANY number that is not 1
+        cout << "Not G - check the age guide!" << endl;
+    }
+
+    return 0;
+}
+ 8.3 IF-ELSE-IF 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int rating;
+    cout << "Enter rating code: "; 
+    cin >> rating;
+
+    // 1. First check
+    if (rating == 1) {
+        cout << "G - General Audience" << endl;
+    } 
+    // 2. Second check (only runs if rating wasn't 1)
+    else if (rating == 2) {
+        cout << "PG - Parental Guidance" << endl;
+    } 
+    // 3. Third check (only runs if rating wasn't 1 or 2)
+    else if (rating == 3) {
+        cout << "PG-13 - Parents Cautioned" << endl;
+    } 
+    // 4. Fourth check (only runs if rating wasn't 1, 2, or 3)
+    else if (rating == 4) {
+        cout << "R - Restricted" << endl;
+    } 
+    // 5. Safety fallback (runs if none of the numbers above matched)
+    else {
+        cout << "Invalid rating code!" << endl;
+    }
+
+    return 0;
+}
+ 8.4 SWITCH 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int rating;
+    cout << "Enter rating code: "; 
+    cin >> rating;
+
+    // The switch evaluates the 'rating' variable
+    switch (rating) {
+        case 1: 
+            cout << "G - General Audience" << endl; 
+            break; // Exits the switch block immediately
+
+        case 2: 
+            cout << "PG - Parental Guidance" << endl; 
+            break;
+
+        case 3: 
+            cout << "PG-13 - Parents Cautioned" << endl; 
+            break;
+
+        case 4: 
+            cout << "R - Restricted" << endl; 
+            break;
+
+        default: 
+            // Runs automatically if 'rating' is any number other than 1, 2, 3, or 4
+            cout << "Invalid rating code!" << endl;
+            break;
+    }
+
+    return 0;
+}
+    
+}
