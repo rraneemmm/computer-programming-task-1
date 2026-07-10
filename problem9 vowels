@@ -1,0 +1,80 @@
+a) if
+#include <iostream>
+using namespace std;
+int main() {
+    char ch;
+    cout << "Enter a letter: ";
+    cin >> ch;
+    if (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+        cout << "Vowel" << endl;
+    return 0;
+}
+
+
+b) if-else
+#include <iostream>
+using namespace std;
+int main() {
+    char ch;
+    cout << "Enter a lowercase letter: ";
+    cin >> ch;
+    if (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+        cout << "Vowel" << endl;
+    else
+        cout << "Consonant" << endl;
+    return 0;
+}
+
+ c) if-else-if
+#include <iostream>
+using namespace std;
+int main() {
+    char ch;
+    cout << "Enter a character: ";
+    cin >> ch;
+    if (!((ch>='a'&&ch<='z') || (ch>='A'&&ch<='Z')))
+        cout << "Not a letter" << endl;
+    else if (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||
+              ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+        cout << "Vowel" << endl;
+    else
+        cout << "Consonant" << endl;
+    return 0;
+}
+
+
+ d) switch
+#include <iostream>
+using namespace std;
+int main() {
+    char ch;
+    cout << "Enter a letter: ";
+    cin >> ch;
+    switch (ch) {
+        case 'a': case 'e': case 'i': case 'o': case 'u':
+        case 'A': case 'E': case 'I': case 'O': case 'U':
+            cout << "Vowel" << endl; break;
+        default:
+            cout << "Consonant" << endl;
+    }
+    return 0;
+}
+
+ e) nested if
+#include <iostream>
+using namespace std;
+int main() {
+    char ch;
+    cout << "Enter a character: ";
+    cin >> ch;
+    if ((ch>='a'&&ch<='z') || (ch>='A'&&ch<='Z')) {
+        if (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||
+             ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+            cout << "Vowel" << endl;
+        else
+            cout << "Consonant" << endl;
+    } else {
+        cout << "Not a letter!" << endl;
+    }
+    return 0;
+}
