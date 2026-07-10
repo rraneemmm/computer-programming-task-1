@@ -1,0 +1,133 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int light;
+    cout << "Enter light code: "; cin >> light;
+    
+    // Outer IF: Checks if the code is a valid signal number
+    if (light >= 1 && light <= 3) {
+        
+        // Inner IFs: Runs only if the outer condition passes
+        if (light == 1) {
+            cout << "RED - Stop!" << endl;
+        } else if (light == 2) {
+            cout << "YELLOW - Slow down!" << endl;
+        } else if (light == 3) {
+            cout << "GREEN - Go!" << endl;
+        }
+        
+    } else {
+        // Runs if the code is completely invalid (e.g., 0 or 5)
+        cout << "Unknown signal - flashing lights!" << endl;
+    }
+    
+    return 0;
+}
+#include <iostream>
+using namespace std;
+
+int main() {
+    int light;
+    cout << "Enter light code: "; 
+    cin >> light;
+
+    // Checking each code sequentially using standard if statements
+    if (light == 1) {
+        cout << "RED - Stop!" << endl;
+    } 
+    else if (light == 2) {
+        cout << "YELLOW - Slow down!" << endl;
+    } 
+    else if (light == 3) {
+        cout << "GREEN - Go!" << endl;
+    } 
+    else {
+        // This catches any number that isn't 1, 2, or 3
+        cout << "Unknown signal - flashing lights!" << endl;
+    }
+#include <iostream>
+using namespace std;
+
+int main() {
+    int light;
+    cout << "Enter light code: "; 
+    cin >> light;
+
+    // The switch statement evaluates the variable 'light'
+    switch (light) {
+        case 1: 
+            cout << "RED - Stop!" << endl; 
+            break;
+            
+        case 2: 
+            cout << "YELLOW - Slow down!" << endl; 
+            break;
+            
+        case 3: 
+            cout << "GREEN - Go!" << endl; 
+            break;
+            
+        default: 
+            // This catches any number that isn't 1, 2, or 3
+            cout << "Unknown signal - flashing lights!" << endl;
+            break;
+    }
+
+    return 0;
+}
+#include <iostream>
+using namespace std;
+
+int main() {
+    int light;
+    cout << "Enter light code: "; 
+    cin >> light;
+
+    // 1. First check
+    if (light == 1) {
+        cout << "RED - Stop!" << endl;
+    } 
+    // 2. Second check (only runs if the first one was false)
+    else if (light == 2) {
+        cout << "YELLOW - Slow down!" << endl;
+    } 
+    // 3. Third check (only runs if both 1 and 2 were false)
+    else if (light == 3) {
+        cout << "GREEN - Go!" << endl;
+    } 
+    // 4. The final fallback (runs if absolutely nothing else matched)
+    else {
+        cout << "Unknown signal - flashing lights!" << endl;
+    }
+
+    return 0;
+}
+#include <iostream>
+using namespace std;
+
+int main() {
+    int light;
+    cout << "Enter light code: "; 
+    cin >> light;
+
+    // 1. First check
+    if (light == 1) {
+        cout << "RED - Stop!" << endl;
+    } 
+    // 2. Second check (only runs if the first one was false)
+    else if (light == 2) {
+        cout << "YELLOW - Slow down!" << endl;
+    } 
+    // 3. Third check (only runs if both 1 and 2 were false)
+    else if (light == 3) {
+        cout << "GREEN - Go!" << endl;
+    } 
+    // 4. The final fallback (runs if absolutely nothing else matched)
+    else {
+        cout << "Unknown signal - flashing lights!" << endl;
+    }
+
+    return 0;
+}
+    return 0;
+}
