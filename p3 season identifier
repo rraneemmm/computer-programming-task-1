@@ -1,0 +1,83 @@
+ 6.1 IF
+#include <iostream>
+using namespace std;
+int main() {
+    int season;
+    cout << "Enter season code: "; cin >> season;
+    if (season == 3)
+        cout << "Summer - grab your sunglasses!" << endl;
+    cout << "Season checked." << endl;
+    return 0;
+}
+
+ 6.2 IF-ELSE 
+#include <iostream>
+using namespace std;
+int main() {
+    int season;
+    cout << "Enter season code: "; cin >> season;
+    if (season == 1)
+        cout << "Winter - bundle up!" << endl;
+    else
+        cout << "Not winter - lighter jacket works!" << endl;
+    return 0;
+}
+
+ 6.3 IF-ELSE-IF 
+#include <iostream>
+using namespace std;
+int main() {
+    int season;
+    cout << "Enter season code: "; cin >> season;
+    if (season == 1)
+        cout << "Winter - snowy days!" << endl;
+    else if (season == 2)
+        cout << "Spring - flowers bloom!" << endl;
+    else if (season == 3)
+        cout << "Summer - sunny days!" << endl;
+    else if (season == 4)
+        cout << "Fall - leaves falling!" << endl;
+    else
+        cout << "Invalid season code!" << endl;
+    return 0;
+}
+
+ 6.4 SWITCH 
+#include <iostream>
+using namespace std;
+int main() {
+    int season;
+    cout << "Enter season code: "; cin >> season;
+    switch (season) {
+        case 1: cout << "Winter - snowy days!" << endl; break;
+        case 2: cout << "Spring - flowers bloom!" << endl; break;
+        case 3: cout << "Summer - sunny days!" << endl; break;
+        case 4: cout << "Fall - leaves falling!" << endl; break;
+        default: cout << "Invalid season code!" << endl;
+    }
+    return 0;
+}
+
+ 6.5 NESTED IF 
+#include <iostream>
+using namespace std;
+int main() {
+    int season;
+    cout << "Enter season code: "; cin >> season;
+    if (season >= 1 && season <= 4) {
+        if (season <= 2) {
+            if (season == 1)
+                cout << "Winter - snowy days!" << endl;
+            else
+                cout << "Spring - flowers bloom!" << endl;
+        } else {
+            if (season == 3)
+                cout << "Summer - sunny days!" << endl;
+            else
+                cout << "Fall - leaves falling!" << endl;
+        }
+    } else {
+        cout << "Invalid season code!" << endl;
+    }
+    return 0;
+}
