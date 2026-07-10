@@ -1,0 +1,72 @@
+ a) if
+#include <iostream>
+using namespace std;
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    if (num % 2 == 0)
+        cout << num << " is Even!" << endl;
+    return 0;
+}
+
+b) if-else
+#include <iostream>
+using namespace std;
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    if (num % 2 == 0)
+        cout << num << " is Even!" << endl;
+    else
+        cout << num << " is Odd!" << endl;
+    return 0;
+}
+
+ c) if-else-if
+#include <iostream>
+using namespace std;
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    if (num == 0)
+        cout << "Zero! Technically even." << endl;
+    else if (num % 2 == 0)
+        cout << num << " is Even!" << endl;
+    else
+        cout << num << " is Odd!" << endl;
+    return 0;
+}
+ 
+d) switch
+#include <iostream>
+using namespace std;
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    switch (num % 2) {           // remainder becomes our "code": 0 or 1
+        case 0: cout << num << " is Even!" << endl; break;
+        case 1: cout << num << " is Odd!" << endl; break;
+    }
+    return 0;
+}
+
+ e) nested if
+#include <iostream>
+using namespace std;
+int main() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    if (num >= 0) {
+        if (num % 2 == 0) cout << "Positive and Even" << endl;
+        else cout << "Positive and Odd" << endl;
+    } else {
+        if (num % 2 == 0) cout << "Negative and Even" << endl;
+        else cout << "Negative and Odd" << endl;
+    }
+    return 0;
+}
