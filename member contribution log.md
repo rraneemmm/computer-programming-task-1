@@ -1,8 +1,8 @@
 # MEMBER CONTRIBUTION LOG
 
-This document summarizes the individual contributions of each team member throughout the development of the Computer Programming Task 1 project. Each member worked independently on a dedicated GitHub branch, committed their work incrementally, and participated in reviewing code for correctness, readability, and compliance with the assignment requirements.
+This document summarizes the individual contributions of each team member throughout the development of the Computer Programming Task 1. Each member worked independently on a dedicated GitHub branch, committed their work incrementally, and participated in reviewing code for correctness, readability, and compliance with the assignment requirements.
 
----
+
 
 # Student 1
 
@@ -25,7 +25,7 @@ This document summarizes the individual contributions of each team member throug
 | Problem 10 – Employee Shift Assignment | 10 Jul 2026 | Late Night | Final program reviewed for correctness and readability. |
 | Updated README, group member details, and contribution log | 10–11 Jul 2026 | Late Night / Morning | Documentation reviewed for completeness and consistency with repository history. |
 
----
+
 
 # Student 2
 
@@ -48,7 +48,7 @@ This document summarizes the individual contributions of each team member throug
 | Problem 9 – Fitness Checker | 10 Jul 2026 | Late Evening | Tested multiple conditions and verified expected output. |
 | Problem 10 – Vending Machine Selection | 10 Jul 2026 | Late Evening | Final review completed before merge. |
 
----
+
 
 # Student 3
 
@@ -70,7 +70,7 @@ This document summarizes the individual contributions of each team member throug
 | Problem 9 – Vowel Checker | 10 Jul 2026 | Evening | Confirmed correct vowel identification using multiple test cases. |
 | Problem 10 – Role-Based Access Control | 10 Jul 2026 | Evening | Final logic reviewed and output verified before completion. |
 
----
+
 
 # Team Workflow
 
@@ -83,7 +83,7 @@ This document summarizes the individual contributions of each team member throug
   - Logical correctness and variable naming.
 - Repository documentation, including the `README.md` and `MEMBER_CONTRIBUTION_LOG.md`, was finalized after verifying that all required files had been committed successfully.
 
----
+
 
 # Team Members
 
