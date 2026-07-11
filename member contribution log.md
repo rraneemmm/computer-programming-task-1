@@ -17,7 +17,6 @@
 | **Raneem** | `rraneemmm` | `raneem-038-work` | Problem 9 – Weather Advisory | 10 Jul 2026 | Late Night | Tested different weather conditions and verified output. |
 | **Raneem** | `rraneemmm` | `raneem-038-work` | Problem 10 – Employee Shift Assignment | 10 Jul 2026 | Late Night | Final program reviewed for correctness and readability. |
 | **Raneem** | `rraneemmm` | `main` | Updated README, member details and contribution log | 10–11 Jul 2026 | Late Night / Morning | Documentation reviewed for completeness and consistency with repository history. |
-
 | **Minha** | `minhashahbaz25-source` | `Minha-022-work` | Repository branch setup | 10 Jul 2026 | Initial Setup | Personal branch created and repository structure verified. |
 | **Minha** | `minhashahbaz25-source` | `Minha-022-work` | Problem 1 – Student Year Level | 10 Jul 2026 | Morning | Logic verified after minor revisions and file update. |
 | **Minha** | `minhashahbaz25-source` | `Minha-022-work` | Problem 2 – Pizza Size Selector | 10 Jul 2026 | Morning | Verified category selection and output formatting. |
@@ -30,7 +29,6 @@
 | **Minha** | `minhashahbaz25-source` | `Minha-022-work` | Problem 8 – Payment Method Selector | 10 Jul 2026 | Evening | Logic and formatting verified. |
 | **Minha** | `minhashahbaz25-source` | `Minha-022-work` | Problem 9 – Fitness Checker | 10 Jul 2026 | Late Evening | Tested multiple conditions and verified output. |
 | **Minha** | `minhashahbaz25-source` | `Minha-022-work` | Problem 10 – Vending Machine Selection | 10 Jul 2026 | Late Evening | Final review completed before merge. |
-
 | **Meerab** | `meerabnafees` | `Meerab-021-work` | Repository branch setup | 10 Jul 2026 | Initial Setup | Personal branch created and repository structure verified. |
 | **Meerab** | `meerabnafees` | `Meerab-021-work` | Problem 1 – Even/Odd Checker | 10 Jul 2026 | Morning | Verified decision-making logic and tested sample inputs. |
 | **Meerab** | `meerabnafees` | `Meerab-021-work` | Problem 2 – Number Sign Determination | 10 Jul 2026 | Morning | Reviewed positive, negative and zero cases. |
