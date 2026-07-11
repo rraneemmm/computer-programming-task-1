@@ -1,10 +1,10 @@
-# MEMBER CONTRIBUTION LOG
+## MEMBER CONTRIBUTION LOG
 
 This document summarizes the individual contributions of each team member throughout the development of the Computer Programming Task 1. Each member worked independently on a dedicated GitHub branch, committed their work incrementally, and participated in reviewing code for correctness, readability, and compliance with the assignment requirements.
 
 
 
-# Student 1
+### Student 1
 
 **Name:** Raneem  
 **GitHub Username:** `rraneemmm`  
@@ -27,7 +27,7 @@ This document summarizes the individual contributions of each team member throug
 
 
 
-# Student 2
+### Student 2
 
 **Name:** Minha Shahbaz  
 **GitHub Username:** `minhashahbaz25-source`  
@@ -50,7 +50,7 @@ This document summarizes the individual contributions of each team member throug
 
 
 
-# Student 3
+### Student 3
 
 **Name:** Meerab Nafees  
 **GitHub Username:** `meerabnafees`  
@@ -72,7 +72,7 @@ This document summarizes the individual contributions of each team member throug
 
 
 
-# Team Workflow
+### Team Workflow
 
 - Each member created and worked within a dedicated GitHub branch.
 - Programming tasks were completed independently and committed incrementally throughout development.
@@ -85,7 +85,7 @@ This document summarizes the individual contributions of each team member throug
 
 
 
-# Team Members
+### Team Members
 
 - **Raneem** — `rraneemmm`
 - **Minha Shahbaz** — `minhashahbaz25-source`
