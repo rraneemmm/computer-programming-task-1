@@ -1,0 +1,78 @@
+ 5.1 IF
+#include <iostream>
+using namespace std;
+int main() {
+    int size;
+    cout << "Enter size code: "; cin >> size;
+    if (size == 3)
+        cout << "Large pizza - great for sharing! $12" << endl;
+    cout << "Order noted." << endl;
+    return 0;
+}
+
+5.2 IF-ELSE 
+#include <iostream>
+using namespace std;
+int main() {
+    int size;
+    cout << "Enter size code: "; cin >> size;
+    if (size == 1)
+        cout << "Small pizza - $5" << endl;
+    else
+        cout << "Bigger than small - check the menu!" << endl;
+    return 0;
+}
+
+ 5.3 IF-ELSE-IF
+#include <iostream>
+using namespace std;
+int main() {
+    int size;
+    cout << "Enter size code: "; cin >> size;
+    if (size == 1)
+        cout << "Small - $5" << endl;
+    else if (size == 2)
+        cout << "Medium - $8" << endl;
+    else if (size == 3)
+        cout << "Large - $12" << endl;
+    else
+        cout << "Invalid size code!" << endl;
+    return 0;
+}
+
+5.4 SWITCH 
+#include <iostream>
+using namespace std;
+int main() {
+    int size;
+    cout << "Enter size code: "; cin >> size;
+    switch (size) {
+        case 1: cout << "Small - $5" << endl; break;
+        case 2: cout << "Medium - $8" << endl; break;
+        case 3: cout << "Large - $12" << endl; break;
+        default: cout << "Invalid size code!" << endl;
+    }
+    return 0;
+}
+
+5.5 NESTED IF
+#include <iostream>
+using namespace std;
+int main() {
+    int size;
+    cout << "Enter size code: "; cin >> size;
+    if (size >= 1 && size <= 3) {
+        if (size == 1)
+            cout << "Small - $5" << endl;
+        else {
+            if (size == 2)
+                cout << "Medium - $8" << endl;
+            else
+                cout << "Large - $12" << endl;
+        }
+    } else {
+        cout << "Invalid size code!" << endl;
+    }
+    return 0;
+}
+

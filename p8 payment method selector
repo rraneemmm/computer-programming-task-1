@@ -1,0 +1,125 @@
+ 9.5 NESTED IF 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int method;
+    cout << "Enter payment code: "; cin >> method;
+
+    // Outer IF: Checks if the code is within the valid range (1 to 3)
+    if (method >= 1 && method <= 3) {
+        
+        // Inner IF-ELSE: Digs down to identify the exact method
+        if (method == 1) {
+            cout << "Cash" << endl;
+        } else if (method == 2) {
+            cout << "Card" << endl;
+        } else { // Must be 3 since it passed the outer filter and isn't 1 or 2
+            cout << "Online" << endl;
+        }
+
+    } else {
+        // Runs immediately if the user inputs any other number
+        cout << "Invalid payment code!" << endl;
+    }
+
+    return 0;
+}
+9.1 IF 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int method;
+    cout << "Enter payment code: "; 
+    cin >> method;
+
+    // Checks for one isolated condition
+    if (method == 2) {
+        cout << "Card - please tap or swipe!" << endl;
+    }
+
+    // This code runs no matter what the input value was
+    cout << "Payment method noted." << endl;
+    
+    return 0;
+}
+ 9.3 IF-ELSE-IF 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int method;
+    cout << "Enter payment code: "; 
+    cin >> method;
+
+    // 1. First check
+    if (method == 1) {
+        cout << "Cash" << endl;
+    } 
+    // 2. Second check (only runs if method wasn't 1)
+    else if (method == 2) {
+        cout << "Card" << endl;
+    } 
+    // 3. Third check (only runs if method wasn't 1 or 2)
+    else if (method == 3) {
+        cout << "Online" << endl;
+    } 
+    // 4. Safety fallback (runs if none of the numbers above matched)
+    else {
+        cout << "Invalid payment code!" << endl;
+    }
+
+    return 0;
+}
+ 9.2 IF-ELSE 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int method;
+    cout << "Enter payment code: "; 
+    cin >> method;
+
+    // Checks the first condition
+    if (method == 1) {
+        cout << "Cash - counting change now!" << endl;
+    } 
+    else {
+        // This runs automatically for ANY number that is not 1
+        cout << "Not cash - going digital!" << endl;
+    }
+
+    return 0;
+}
+ 9.4 SWITCH 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int method;
+    cout << "Enter payment code: "; 
+    cin >> method;
+
+    // The switch evaluates the 'method' variable
+    switch (method) {
+        case 1: 
+            cout << "Cash" << endl; 
+            break; // Exits the switch block immediately
+
+        case 2: 
+            cout << "Card" << endl; 
+            break;
+
+        case 3: 
+            cout << "Online" << endl; 
+            break;
+
+        default: 
+            // Runs automatically if 'method' is any number other than 1, 2, or 3
+            cout << "Invalid payment code!" << endl;
+            break;
+    }
+
+    return 0;
+}

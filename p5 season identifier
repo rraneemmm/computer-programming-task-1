@@ -1,0 +1,142 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int season;
+    cout << "Enter season code: "; cin >> season;
+    
+    // Outer IF: Validates that the input is a valid season number (1, 2, 3, or 4)
+    if (season >= 1 && season <= 4) {
+        
+        // Inner IF-ELSE-IF: Runs only if the number passed the range validation
+        if (season == 1) {
+            cout << "Winter - snowy days!" << endl;
+        } else if (season == 2) {
+            cout << "Spring - flowers bloom!" << endl;
+        } else if (season == 3) {
+            cout << "Summer - sunny days!" << endl;
+        } else if (season == 4) {
+            cout << "Fall - leaves falling!" << endl;
+        }
+        
+    } else {
+        // Runs if the input code is completely outside the valid 1-4 range
+        cout << "Invalid season code!" << endl;
+    }
+    
+    return 0;
+}
+#include <iostream>
+using namespace std;
+int main() {
+    int season;
+    cout << "Enter season code: "; cin >> season;
+    
+    // Outer IF: Validates that the input is a valid season number (1, 2, 3, or 4)
+    if (season >= 1 && season <= 4) {
+        
+        // Inner IF-ELSE-IF: Runs only if the number passed the range validation
+        if (season == 1) {
+            cout << "Winter - snowy days!" << endl;
+        } else if (season == 2) {
+            cout << "Spring - flowers bloom!" << endl;
+        } else if (season == 3) {
+            cout << "Summer - sunny days!" << endl;
+        } else if (season == 4) {
+            cout << "Fall - leaves falling!" << endl;
+        }
+        
+    } else {
+        // Runs if the input code is completely outside the valid 1-4 range
+        cout << "Invalid season code!" << endl;
+    }
+    
+    return 0;
+}
+ 6.2 IF-ELSE 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int season;
+    cout << "Enter season code: "; 
+    cin >> season;
+
+    // Checks the first condition
+    if (season == 1) {
+        cout << "Winter - bundle up!" << endl;
+    } 
+    else {
+        // This runs automatically for ANY number that is not 1
+        cout << "Not winter - lighter jacket works!" << endl;
+    }
+
+    return 0;
+}
+ 6.3 IF-ELSE-IF 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int season;
+    cout << "Enter season code: "; 
+    cin >> season;
+
+    // 1. First check
+    if (season == 1) {
+        cout << "Winter - snowy days!" << endl;
+    } 
+    // 2. Second check (only runs if season wasn't 1)
+    else if (season == 2) {
+        cout << "Spring - flowers bloom!" << endl;
+    } 
+    // 3. Third check (only runs if season wasn't 1 or 2)
+    else if (season == 3) {
+        cout << "Summer - sunny days!" << endl;
+    } 
+    // 4. Fourth check (only runs if season wasn't 1, 2, or 3)
+    else if (season == 4) {
+        cout << "Fall - leaves falling!" << endl;
+    } 
+    // 5. Safety fallback (runs if none of the numbers above matched)
+    else {
+        cout << "Invalid season code!" << endl;
+    }
+
+    return 0;
+}
+ 6.4 SWITCH 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int season;
+    cout << "Enter season code: "; 
+    cin >> season;
+
+    // The switch evaluates the 'season' variable
+    switch (season) {
+        case 1: 
+            cout << "Winter - snowy days!" << endl; 
+            break; // Stops execution and exits the switch
+
+        case 2: 
+            cout << "Spring - flowers bloom!" << endl; 
+            break;
+
+        case 3: 
+            cout << "Summer - sunny days!" << endl; 
+            break;
+
+        case 4: 
+            cout << "Fall - leaves falling!" << endl; 
+            break;
+
+        default: 
+            // Runs automatically if 'season' is any number other than 1, 2, 3, or 4
+            cout << "Invalid season code!" << endl;
+            break;
+    }
+
+    return 0;
+}
+
