@@ -1,0 +1,78 @@
+ a) if
+#include <iostream>
+using namespace std;
+int main() {
+    int marks;
+    cout << "Enter marks: ";
+    cin >> marks;
+    if (marks >= 90)
+        cout << "Excellent! You scored an A." << endl;
+    return 0;
+}
+
+ b) if-else
+#include <iostream>
+using namespace std;
+int main() {
+    int marks;
+    cout << "Enter marks: ";
+    cin >> marks;
+    if (marks >= 50)
+        cout << "Pass" << endl;
+    else
+        cout << "Fail" << endl;
+    return 0;
+}
+
+
+c) if-else-if
+#include <iostream>
+using namespace std;
+int main() {
+    int marks;
+    cout << "Enter marks: ";
+    cin >> marks;
+    if (marks >= 90) cout << "Grade A" << endl;
+    else if (marks >= 75) cout << "Grade B" << endl;
+    else if (marks >= 60) cout << "Grade C" << endl;
+    else if (marks >= 50) cout << "Grade D" << endl;
+    else cout << "Grade F" << endl;
+    return 0;
+}
+
+
+ d) switch
+#include <iostream>
+using namespace std;
+int main() {
+    int marks;
+    cout << "Enter marks: ";
+    cin >> marks;
+    int band = marks / 10;          
+    switch (band) {
+        case 10:
+        case 9:  cout << "Grade A" << endl; break;
+        case 8:
+        case 7:  cout << "Grade B" << endl; break;
+        case 6:  cout << "Grade C" << endl; break;
+        case 5:  cout << "Grade D" << endl; break;
+        default: cout << "Grade F" << endl;
+    }
+    return 0;
+}
+
+ e) nested if
+#include <iostream>
+using namespace std;
+int main() {
+    int marks;
+    cout << "Enter marks: ";
+    cin >> marks;
+    if (marks >= 50) {
+        if (marks >= 90) cout << "Pass with Distinction" << endl;
+        else cout << "Pass" << endl;
+    } else {
+        cout << "Fail" << endl;
+    }
+    return 0;
+}

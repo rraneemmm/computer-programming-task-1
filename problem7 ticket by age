@@ -1,0 +1,74 @@
+a) if                                                                                                                   a) i
+#include <iostream>
+using namespace std;
+int main() {
+    int age;
+    cout << "Enter age: ";
+    cin >> age;
+    if (age < 5)
+        cout << "Free ticket!" << endl;
+    return 0;
+}
+
+
+ b) if-else
+#include <iostream>
+using namespace std;
+int main() {
+    int age;
+    cout << "Enter age: ";
+    cin >> age;
+    if (age < 18)
+        cout << "Child price: $5" << endl;
+    else
+        cout << "Adult price: $10" << endl;
+    return 0;
+}
+
+ c) if-else-if
+#include <iostream>
+using namespace std;
+int main() {
+    int age;
+    cout << "Enter age: ";
+    cin >> age;
+    if (age < 5) cout << "Free ticket!" << endl;
+    else if (age < 13) cout << "Child price: $5" << endl;
+    else if (age < 60) cout << "Adult price: $10" << endl;
+    else cout << "Senior price: $7" << endl;
+    return 0;
+}
+
+ d) switch
+#include <iostream>
+using namespace std;
+int main() {
+    int category;
+    cout << "Select category -> 1:Kid 2:Teen 3:Adult 4:Senior : ";
+    cin >> category;
+    switch (category) {
+        case 1: cout << "Price: Free" << endl; break;
+        case 2: cout << "Price: $5" << endl; break;
+        case 3: cout << "Price: $10" << endl; break;
+        case 4: cout << "Price: $7" << endl; break;
+        default: cout << "Invalid category" << endl;
+    }
+    return 0;
+}
+
+ e) nested if
+#include <iostream>
+using namespace std;
+int main() {
+    int age;
+    cout << "Enter age: ";
+    cin >> age;
+    if (age < 18) {
+        if (age < 5) cout << "Free ticket for toddler!" << endl;
+        else cout << "Child ticket: $5" << endl;
+    } else {
+        if (age >= 60) cout << "Senior ticket: $7" << endl;
+        else cout << "Adult ticket: $10" << endl;
+    }
+    return 0;
+}

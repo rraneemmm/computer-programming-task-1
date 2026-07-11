@@ -1,0 +1,77 @@
+a) if
+#include <iostream>
+using namespace std;
+int main() {
+    int role;
+    cout << "Enter role code (1=Admin): ";
+    cin >> role;
+    if (role == 1)
+        cout << "Admin Access Granted" << endl;
+    return 0;
+}
+
+
+ b) if-else
+#include <iostream>
+using namespace std;
+int main() {
+    int role;
+    cout << "Enter role code (1=Admin, else=User): ";
+    cin >> role;
+    if (role == 1)
+        cout << "Admin Access Granted" << endl;
+    else
+        cout << "Regular User Access Granted" << endl;
+    return 0;
+}
+
+
+ c) if-else-if
+#include <iostream>
+using namespace std;
+int main() {
+    int role;
+    cout << "Enter role code (1-4): ";
+    cin >> role;
+    if (role == 1) cout << "Admin Access" << endl;
+    else if (role == 2) cout << "Editor Access" << endl;
+    else if (role == 3) cout << "Viewer Access" << endl;
+    else if (role == 4) cout << "Guest Access" << endl;
+    else cout << "Invalid Role" << endl;
+    return 0;
+}
+
+
+ d) switch
+#include <iostream>
+using namespace std;
+int main() {
+    int role;
+    cout << "Enter role code (1-4): ";
+    cin >> role;
+    switch (role) {
+        case 1: cout << "Admin Access" << endl; break;
+        case 2: cout << "Editor Access" << endl; break;
+        case 3: cout << "Viewer Access" << endl; break;
+        case 4: cout << "Guest Access" << endl; break;
+        default: cout << "Invalid Role" << endl;
+    }
+    return 0;
+}
+
+
+ e) nested if
+#include <iostream>
+using namespace std;
+int main() {
+    int role, active;
+    cout << "Enter role code (1-4) and active status (1=active,0=not): ";
+    cin >> role >> active;
+    if (role >= 1 && role <= 4) {
+        if (active == 1) cout << "Access Granted" << endl;
+        else cout << "Account Inactive - Access Denied" << endl;
+    } else {
+        cout << "Invalid Role" << endl;
+    }
+    return 0;
+}
