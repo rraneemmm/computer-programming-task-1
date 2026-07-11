@@ -1,0 +1,87 @@
+Statement: Codes: 1 = Water ($1), 2 = Soda ($2), 3 = Juice ($3). Print the item and price.
+
+1. if
+#include <iostream>
+using namespace std;
+int main() {
+    int code;
+    cout << "Enter code: "; cin >> code;
+    if (code == 1)
+        cout << "Water selected - special: refill discount!" << endl;
+    cout << "Transaction processed." << endl;
+    return 0;
+}
+
+
+2. if-else
+
+#include <iostream>
+using namespace std;
+int main() {
+    int code;
+    cout << "Enter code: "; cin >> code;
+    if (code >= 1 && code <= 3)
+        cout << "Valid code, please pay." << endl;
+    else
+        cout << "Invalid code." << endl;
+    return 0;
+}
+
+
+3. if-else-if
+
+#include <iostream>
+using namespace std;
+int main() {
+    int code;
+    cout << "Enter code: "; cin >> code;
+    if (code == 1)
+        cout << "Water - $1" << endl;
+    else if (code == 2)
+        cout << "Soda - $2" << endl;
+    else if (code == 3)
+        cout << "Juice - $3" << endl;
+    else
+        cout << "Invalid code." << endl;
+    return 0;
+}
+
+
+4. switch
+
+#include <iostream>
+using namespace std;
+int main() {
+    int code;
+    cout << "Enter code: "; cin >> code;
+    switch (code) {
+        case 1: cout << "Water - $1" << endl; break;
+        case 2: cout << "Soda - $2" << endl; break;
+        case 3: cout << "Juice - $3" << endl; break;
+        default: cout << "Invalid code." << endl;
+    }
+    return 0;
+}
+
+
+5. Nested if
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    int code;
+    cout << "Enter code: "; cin >> code;
+    if (code >= 1 && code <= 3) {
+        if (code == 1)
+            cout << "Water - $1" << endl;
+        else {
+            if (code == 2)
+                cout << "Soda - $2" << endl;
+            else
+                cout << "Juice - $3" << endl;
+        }
+    } else
+        cout << "Invalid code." << endl;
+    return 0;
+}

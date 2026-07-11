@@ -1,0 +1,88 @@
+Statement: Codes: 1 = Morning, 2 = Evening, 3 = Night. Print the shift timing.
+
+
+1. if
+
+#include <iostream>
+using namespace std;
+int main() {
+    int code;
+    cout << "Enter shift code: "; cin >> code;
+    if (code == 3)
+        cout << "Night shift - allowance applies!" << endl;
+    cout << "Shift processed." << endl;
+    return 0;
+}
+
+2. if-else
+
+
+
+#include <iostream>
+using namespace std;
+int main() {
+    int code;
+    cout << "Enter shift code: "; cin >> code;
+    if (code >= 1 && code <= 3)
+        cout << "Valid shift code." << endl;
+    else
+        cout << "Invalid shift code." << endl;
+    return 0;
+}
+
+
+
+3. if-else-if
+
+#include <iostream>
+using namespace std;
+int main() {
+    int code;
+    cout << "Enter shift code: "; cin >> code;
+    if (code == 1) cout << "Morning shift: 8am - 4pm" << endl;
+    else if (code == 2) cout << "Evening shift: 4pm - 12am" << endl;
+    else if (code == 3) cout << "Night shift: 12am - 8am" << endl;
+    else cout << "Invalid shift code." << endl;
+    return 0;
+}
+
+
+
+4. switch
+
+#include <iostream>
+using namespace std;
+int main() {
+    int code;
+    cout << "Enter shift code: "; cin >> code;
+    switch (code) {
+        case 1: cout << "Morning shift: 8am - 4pm" << endl; break;
+        case 2: cout << "Evening shift: 4pm - 12am" << endl; break;
+        case 3: cout << "Night shift: 12am - 8am" << endl; break;
+        default: cout << "Invalid shift code." << endl;
+    }
+    return 0;
+}
+
+
+
+5. Nested if
+
+#include <iostream>
+using namespace std;
+int main() {
+    int code;
+    cout << "Enter shift code: "; cin >> code;
+    if (code >= 1 && code <= 3) {
+        if (code == 1)
+            cout << "Morning shift: 8am - 4pm" << endl;
+        else {
+            if (code == 2)
+                cout << "Evening shift: 4pm - 12am" << endl;
+            else
+                cout << "Night shift: 12am - 8am" << endl;
+        }
+    } else
+        cout << "Invalid shift code." << endl;
+    return 0;
+}
